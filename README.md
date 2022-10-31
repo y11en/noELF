@@ -6,10 +6,18 @@
 ## 用法
 
 ```
+./noELF {PATH/URL} {argv}
+```
+
 本地ELF文件加载
+
+```
 ./noElf /bin/ls -al
+```
 
 远程ELF文件加载
+
+```
 python3 -m http.server 8000
 ./noElf http://10.10.10.10:8000/ls -al
 ```
